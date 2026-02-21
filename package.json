@@ -1,0 +1,14 @@
+{
+  "name": "asrg.github.io",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run serve.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

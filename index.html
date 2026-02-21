@@ -3,88 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World - ASRG</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        
-        .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 3rem 2rem;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 500px;
-            margin: 2rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin: 0 0 1rem 0;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        
-        p {
-            font-size: 1.2rem;
-            margin: 1rem 0;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-        
-        .wave {
-            display: inline-block;
-            animation: wave 2s infinite;
-            transform-origin: 70% 70%;
-        }
-        
-        @keyframes wave {
-            0% { transform: rotate(0deg); }
-            10% { transform: rotate(14deg); }
-            20% { transform: rotate(-8deg); }
-            30% { transform: rotate(14deg); }
-            40% { transform: rotate(-4deg); }
-            50% { transform: rotate(10deg); }
-            60% { transform: rotate(0deg); }
-            100% { transform: rotate(0deg); }
-        }
-        
-        .footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            .container {
-                margin: 1rem;
-                padding: 2rem 1.5rem;
-            }
-        }
-    </style>
+    <title>Arcane Systems Reading Group</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World <span class="wave">👋</span></h1>
-        <p>Welcome to the ASRG GitHub Page!</p>
-        <p>This is a standard Hello World page for the ASRG newsletter service.</p>
-        <div class="footer">
-            <p>Powered by GitHub Pages</p>
-        </div>
-    </div>
+    <header>
+        <h1>Arcane Systems Reading Group</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>ASRG is an independent, community-run reading group focused on the internals of systems software. We are not affiliated with any company.</p>
+
+            <p>We meet monthly. Each session we pick a paper, book chapter, or codebase and work through it together. You are not expected to have attended previous sessions &mdash; all backgrounds are welcome. The goal is to learn and build, not to pitch products.</p>
+
+            <p>Recordings of past sessions are available on <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>.</p>
+        </section>
+
+        <section>
+            <h2>Philosophy</h2>
+
+            <blockquote>
+                <p><i>&ldquo;Systems programming is a way of modelling software development. It&rsquo;s not about a category of what you are working on &mdash; it&rsquo;s a way of looking at the problem. An excellent systems programmer fully understands the systems involved.&rdquo;</i></p>
+                <footer>&mdash; <i>Andrew Kelley</i></footer>
+            </blockquote>
+
+            <p>Computer systems are the building blocks of applications and the fabric that ties them together &mdash; databases, networks, virtualization, programming languages, compilers, distributed algorithms, optimizers, orchestrators, verifiers, libraries&hellip;</p>
+
+            <p>We welcome people from all backgrounds. Technology is used by everyone, and diverse experiences enrich communal discourse. All you need is a computer. Sharing knowledge with others is more fun, provides helpful context, and builds a community that deeply values curiosity and individual empowerment.</p>
+
+            <p>Computers are pretty cool. Let&rsquo;s explore.</p>
+        </section>
+
+        <section>
+            <h2>What we explore</h2>
+
+            <p>Members build, debug, test, and read about:</p>
+
+            <ul>
+                <li>Compilers, parsers, virtual machines, IDEs, and profiling tools</li>
+                <li>Compiler and language design and implementation</li>
+                <li>Databases and storage systems: OLTP (MySQL, Postgres, SQLite), OLAP (ClickHouse, Druid, Snowflake), NoSQL (Cassandra, Redis, MongoDB, Neo4j), NewSQL (CockroachDB, VoltDB, NuoDB), and cloud-native (Cosmos DB, DynamoDB, Aurora)</li>
+                <li>Networking stacks, internet protocols, and distributed systems</li>
+                <li>Distributed and concurrent data systems</li>
+                <li>Operating systems, kernels, and device drivers</li>
+                <li>Large-scale infrastructure, low-latency services, and high-availability systems</li>
+                <li>Formal methods, modelling, and verification</li>
+                <li>Browser engines, kernel development, and systems security</li>
+                <li>Algorithms, data structures, performance optimization, and HPC</li>
+                <li>Embedded systems, IoT, and robotics</li>
+                <li>AI/ML infrastructure, training systems, and inference optimization</li>
+                <li>Virtualization, hypervisors, and emulators</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Presenter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TBD</td>
+                        <td>Linux Kernel Module Programming</td>
+                        <td><a href="https://github.com/2SpaceMasterRace">vxsha-256</a></td>
+                    </tr>
+                    <tr>
+                        <td>TBD</td>
+                        <td>Reviewing DOOM &mdash; BSP, Fast Inverse Square Root &amp; the Quake III Engine</td>
+                        <td><a href="https://github.com/2SpaceMasterRace">vxsha-256</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>BSOD &mdash; Bimonthly Sessions of Development</h2>
+
+            <p>BSOD is an intense week-long jam where members implement a piece of software from scratch. Writing something from scratch turns theory into practice.</p>
+
+            <ul>
+                <li><strong>ZigFest</strong> &mdash; 8-day crash course into Zig and systems engineering: SIMD algorithms, TCP/IP from scratch, in-memory cache, and rebuilding Redis.</li>
+                <li><strong>Deployment from Scratch</strong> &mdash; Over-engineering a website in the 21st century: servers, databases, and production fundamentals.</li>
+                <li><strong>OS-Dev</strong> &mdash; 4-week speedrun building a mini OS with Rust and C: kernel, C runtime, concurrency, and hypervisors.</li>
+                <li><strong>UNIX Jam</strong> &mdash; 1-week festival of systems programming: io_uring, eBPF, coreutils from scratch, distributed challenges, and x86 assembly.</li>
+                <li><strong>Compiler Construction</strong> &mdash; 10-day jam building modern compilers: optimization techniques, virtual machines, and experimental language features.</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Join the community on <a href="https://discord.gg/BtzP3eH4R3">Discord</a> or <a href="https://chat.whatsapp.com/CQmHWWzGzVeHLC6TcuGmmm">WhatsApp</a>. Sessions are announced in the group chat.</p>
+
+            <p>Interested in presenting? Send an <a href="mailto:v.harivarsha@gmail.com">email</a>.</p>
+        </section>
+
+        <section>
+            <h2>Brought to you by</h2>
+
+            <p>ASRG is organized by <a href="https://x.com/asrg_gg">@asrg_gg</a>. Follow us on <a href="https://x.com/asrg_gg">X</a>, <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>, and <a href="https://www.twitch.tv/nanod1jkstra">Twitch</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+    </footer>
 </body>
 </html>

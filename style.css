@@ -1,0 +1,50 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+        margin-bottom: 8px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 6px 8px;
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+
+    td:first-child {
+        font-weight: bold;
+        background: #f9f9f9;
+    }
+}
